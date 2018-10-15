@@ -43,7 +43,7 @@ firstTime = true;
 function start_clock() {
     if (firstTime) {
         firstTime = false;
-        startUp();
+        //startUp();
     }
     var today = new Date();
     var h = today.getHours();
