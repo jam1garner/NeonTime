@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>name</key>
+		<string>textColor</string>
+		<key>type</key>
+		<string>edit</string>
+		<key>label</key>
+		<string>Text Color (Hex)</string>
+		<key>default</key>
+		<string></string>
+	 </dict>
+	 <dict>
+          <key>name</key>
+          <string>clockFormat</string>
+          <key>type</key>
+          <string>select</string>
+          <key>label</key>
+          <string>Clock Format</string>
+          <key>default</key>
+          <string>12h format</string>
+		<key>options</key>
+		<dict>
+			<key>12h format</key>
+              <string>12h</string>
+			<key>24h format</key>
+              <string>24h</string>
+		 </dict>
+      </dict>
+</array>
+</plist>

@@ -57,3 +57,34 @@ function start_clock() {
         "<br>" + MONTHS[today.getMonth()] + " " + add_ordinal_suffix(today.getDate());
     var t = setTimeout(start_clock, 500);
 }
+
+if (typeof color == "undefined") {
+    color = "#FF1177";
+}
+
+if (typeof clockFormat == "undefined") {
+    clockFormat = "12h format";
+}
+
+neonTextTemplate = `
+@keyframes neontext {
+    from {
+        text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px {color}, 0 0 35px {color}, 0 0 40px {color}, 0 0 50px {color}, 0 0 75px {color};
+    }
+    to {
+        text-shadow: 0 0 2.5px #fff, 0 0 5px #fff, 0 0 7.5px #fff, 0 0 10px {color}, 0 0 17.5px {color}, 0 0 20px {color}, 0 0 25px {color}, 0 0 37.5px {color};
+    }
+}`.replace(/{color}/g, color);
+
+neonBoxTemplate = `
+@keyframes neonbox {
+    from {
+        box-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px {color}, 0 0 35px {color}, 0 0 40px {color}, 0 0 50px {color}, 0 0 75px {color};
+    }
+    to {
+        box-shadow: 0 0 2.5px #fff, 0 0 5px #fff, 0 0 7.5px #fff, 0 0 10px {color}, 0 0 17.5px {color}, 0 0 20px {color}, 0 0 25px {color}, 0 0 37.5px {color};
+    }
+}`.replace(/{color}/g, color);
+
+document.getElementById("styleSheet").sheet.insertRule(neonTextTemplate, 0);
+document.getElementById("styleSheet").sheet.insertRule(neonBoxTemplate, 0);
