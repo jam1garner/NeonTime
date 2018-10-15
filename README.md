@@ -21,6 +21,7 @@ It should in the end look like:
         L LockBackground.html
         L style.css     
         L time_keeper.js
+        L Monoton.woff2
 ```   
 
 ### Other
