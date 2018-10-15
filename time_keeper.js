@@ -60,6 +60,9 @@ function start_clock() {
 }
 
 function startUp() {
+    if (typeof textColor == "undefined")
+        textColor = "undefined";
+    document.getElementById('colorOutput').innerHTML = textColor;
     if (typeof textColor == "undefined") {
         textColor = "#FF1177"; // default color
     }
