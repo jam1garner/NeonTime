@@ -16,9 +16,13 @@ A XenHTML clock inspired by "Stranger Things"
 It should in the end look like:
 
 /var/mobile/Library/LockHTML
+
     L NeonTime [Folder]
+    
         L LockBackground.html
+        
         L style.css
+        
         L time_keeper.js
         
 ### Other
