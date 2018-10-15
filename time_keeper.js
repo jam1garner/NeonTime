@@ -38,8 +38,13 @@ function add_ordinal_suffix(i) {
     return i + "th";
 }
 
+firstTime = true;
+
 function start_clock() {
-    startUp();
+    if (firstTime) {
+        firstTime = false;
+        startUp();
+    }
     var today = new Date();
     var h = today.getHours();
     var m = today.getMinutes();
@@ -60,12 +65,13 @@ function start_clock() {
 }
 
 function startUp() {
+    var variables = ""
+    for (var name in this)
+        variables += name + "\n";
+    console.re.log(variables);
     if (typeof textColor == "undefined") {
         textColor = "#FF1177"; // default color
     }
-
-    document.getElementById("colorOutput").innerHTML = textColor;
-
     if (typeof clockFormat == "undefined") {
         clockFormat = "12h format";
     }

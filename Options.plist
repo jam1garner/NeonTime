@@ -10,7 +10,7 @@
 		<key>label</key>
 		<string>Text Color (Hex)</string>
 		<key>default</key>
-		<string></string>
+		<string>"#FF1177"</string>
 	 </dict>
 	 <dict>
           <key>name</key>
