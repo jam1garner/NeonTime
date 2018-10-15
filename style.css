@@ -1,0 +1,77 @@
+#container {
+    margin: 20px 0px;
+    width: 444px;
+}
+
+svg {
+    z-index: -1;
+    position: absolute;
+    margin: 0px 0px;
+    -webkit-animation: neonbox 3s ease-in-out infinite alternate;
+    -moz-animation: neonbox 3s ease-in-out infinite alternate;
+    animation: neonbox 3s ease-in-out infinite alternate;
+}
+
+#bottombar {
+    left: 102px;
+    top: 185px;
+}
+
+#leftbar {
+    left: 102px;
+    top: 40px;
+}
+
+#rightbar {
+    left: 312px;
+    top: 40px;
+}
+
+.time {
+    z-index: 0;
+    font-family: Monoton;
+    text-align: center;
+    font-size: 2em;
+    margin: 0;
+    text-decoration: none;
+    color: #fff;
+    -webkit-animation: neontext 3s ease-in-out infinite alternate;
+    -moz-animation: neontext 3s ease-in-out infinite alternate;
+    animation: neontext 3s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes neontext {
+    from {
+        text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #FF1177, 0 0 35px #FF1177, 0 0 40px #FF1177, 0 0 50px #FF1177, 0 0 75px #FF1177;
+    }
+    to {
+        text-shadow: 0 0 2.5px #fff, 0 0 5px #fff, 0 0 7.5px #fff, 0 0 10px #FF1177, 0 0 17.5px #FF1177, 0 0 20px #FF1177, 0 0 25px #FF1177, 0 0 37.5px #FF1177;
+    }
+}
+
+@keyframes neontext {
+    from {
+        text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #FF1177, 0 0 35px #FF1177, 0 0 40px #FF1177, 0 0 50px #FF1177, 0 0 75px #FF1177;
+    }
+    to {
+        text-shadow: 0 0 2.5px #fff, 0 0 5px #fff, 0 0 7.5px #fff, 0 0 10px #FF1177, 0 0 17.5px #FF1177, 0 0 20px #FF1177, 0 0 25px #FF1177, 0 0 37.5px #FF1177;
+    }
+}
+
+@-webkit-keyframes neonbox {
+    from {
+        box-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #FF1177, 0 0 35px #FF1177, 0 0 40px #FF1177, 0 0 50px #FF1177, 0 0 75px #FF1177;
+    }
+    to {
+        box-shadow: 0 0 2.5px #fff, 0 0 5px #fff, 0 0 7.5px #fff, 0 0 10px #FF1177, 0 0 17.5px #FF1177, 0 0 20px #FF1177, 0 0 25px #FF1177, 0 0 37.5px #FF1177;
+    }
+}
+
+@keyframes neonbox {
+    from {
+        box-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #FF1177, 0 0 35px #FF1177, 0 0 40px #FF1177, 0 0 50px #FF1177, 0 0 75px #FF1177;
+    }
+    to {
+        box-shadow: 0 0 2.5px #fff, 0 0 5px #fff, 0 0 7.5px #fff, 0 0 10px #FF1177, 0 0 17.5px #FF1177, 0 0 20px #FF1177, 0 0 25px #FF1177, 0 0 37.5px #FF1177;
+    }
+}
