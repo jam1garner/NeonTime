@@ -60,11 +60,8 @@ function start_clock() {
 }
 
 function startUp() {
-    if (typeof color == "undefined")
-        color = "undefined";
-    document.getElementById("colorOutput").innerHTML = color;
-    if (typeof color == "undefined") {
-        color = "#FF1177";
+    if (typeof textColor == "undefined") {
+        textColor = "#FF1177"; // default color
     }
 
     if (typeof clockFormat == "undefined") {
@@ -79,7 +76,7 @@ function startUp() {
         to {
             text-shadow: 0 0 2.5px #fff, 0 0 5px #fff, 0 0 7.5px #fff, 0 0 10px {color}, 0 0 17.5px {color}, 0 0 20px {color}, 0 0 25px {color}, 0 0 37.5px {color};
         }
-    }`.replace(/{color}/g, color);
+    }`.replace(/{color}/g, textColor);
 
     neonBoxTemplate = `
     @keyframes neonbox {
@@ -89,7 +86,7 @@ function startUp() {
         to {
             box-shadow: 0 0 2.5px #fff, 0 0 5px #fff, 0 0 7.5px #fff, 0 0 10px {color}, 0 0 17.5px {color}, 0 0 20px {color}, 0 0 25px {color}, 0 0 37.5px {color};
         }
-    }`.replace(/{color}/g, color);
+    }`.replace(/{color}/g, textColor);
 
     document.getElementById("styleSheet").sheet.insertRule(neonTextTemplate, 0);
     document.getElementById("styleSheet").sheet.insertRule(neonBoxTemplate, 0);
