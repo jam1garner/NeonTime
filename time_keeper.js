@@ -50,14 +50,14 @@ function start_clock() {
     var m = today.getMinutes();
     if (m < 10)
         m = "0" + m;
-    if (h == 0)
-        h = 12;
     var amPm;
     if (h > 12)
         amPm = "PM";
     else
         amPm = "AM";
     h = h % 12;
+    if (h == 0)
+        h = 12;
     document.getElementsByClassName('time')[0].innerHTML =
         h + ":" + m + " " + amPm + "<br>" + DAYS[today.getDay()] +
         "<br>" + MONTHS[today.getMonth()] + " " + add_ordinal_suffix(today.getDate());
